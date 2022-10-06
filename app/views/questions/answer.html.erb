@@ -1,0 +1,31 @@
+<section class="vh-100 bg-light">
+  <div class="container py-5 h-100">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col col-lg-10 col-xl-8">
+      <h1>Stupid Coaching</h1>
+        <figure class="note note-primary p-4">
+          <blockquote class="blockquote">
+            <p class="pb-2">
+              <%= params[:question] %>
+            </p>
+          </blockquote>
+          <figcaption class="blockquote-footer mb-0">
+            You
+          </figcaption>
+        </figure>
+
+        <figure class="note note-secondary p-4">
+          <blockquote class="blockquote">
+            <p class="pb-2">
+              <%= @answer %>
+            </p>
+          </blockquote>
+          <figcaption class="blockquote-footer mb-0">
+            Your coach
+          </figcaption>
+        </figure>
+        <%= link_to "Ask a new question", ask_path %>
+      </div>
+    </div>
+  </div>
+</section>
